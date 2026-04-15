@@ -8,7 +8,7 @@ const BASE_URL = CONFIGURED_BASE_URL || DEFAULT_BASE_URL;
 const DEV_BASE_URL_CANDIDATES = [
   BASE_URL,
   "http://127.0.0.1:5000/api",
-  "http://localhost:5000/api",
+  "https://afrospice-backend.onrender.com/api",
 ].filter((value, index, collection) => Boolean(value) && collection.indexOf(value) === index);
 
 let activeBaseUrl = BASE_URL;

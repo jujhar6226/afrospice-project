@@ -8,7 +8,7 @@ const OUT_DIR = path.join(ROOT, 'tmp', 'page-captures', RUN_ID);
 const USER_DIR = path.join(ROOT, 'tmp', 'chrome-capture-profile', RUN_ID);
 const DEBUG_PORT = 9222;
 const FRONTEND = 'http://localhost:5173';
-const BACKEND = 'http://localhost:5000';
+const BACKEND = 'https://afrospice-backend.onrender.com';
 
 const chromePathCandidates = [
   'C:/Program Files/Google/Chrome/Application/chrome.exe',
