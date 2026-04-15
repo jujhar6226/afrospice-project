@@ -1,0 +1,52 @@
+[
+  {
+    "id": "SALE-HIST-1001",
+    "status": "Paid",
+    "channel": "In-Store",
+    "paymentMethod": "Card",
+    "customer": "Walk-in Customer",
+    "staffId": "AFR-211",
+    "date": "2025-08-08T16:15:00Z",
+    "createdAt": "2025-08-08T16:15:00Z",
+    "updatedAt": "2025-08-08T16:15:00Z",
+    "items": [
+      {
+        "sku": "ASP-RICE-001",
+        "qty": 2,
+        "price": 14.99,
+        "unitCost": 7.55
+      },
+      {
+        "sku": "ASP-SPICE-001",
+        "qty": 1,
+        "price": 9.25,
+        "unitCost": 3.8
+      }
+    ]
+  },
+  {
+    "id": "SALE-HIST-1002",
+    "status": "Paid",
+    "channel": "Phone Order",
+    "paymentMethod": "Transfer",
+    "customer": "Kwame Family Catering",
+    "staffId": "AFR-210",
+    "date": "2025-08-10T18:40:00Z",
+    "createdAt": "2025-08-10T18:40:00Z",
+    "updatedAt": "2025-08-10T18:40:00Z",
+    "items": [
+      {
+        "sku": "ASP-RICE-001",
+        "qty": 5,
+        "price": 14.5,
+        "unitCost": 7.55
+      },
+      {
+        "sku": "ASP-OIL-001",
+        "qty": 3,
+        "price": 11.5,
+        "unitCost": 6.1
+      }
+    ]
+  }
+]

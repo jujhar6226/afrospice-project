@@ -1,0 +1,2 @@
+name,contactName,email,phone,notes,isActive,createdAt,updatedAt
+REPLACE_SUPPLIER_NAME,REPLACE_CONTACT_NAME,contact@example.com,+1 000 000 0000,Optional notes,TRUE,2025-01-01T09:00:00Z,2025-01-01T09:00:00Z

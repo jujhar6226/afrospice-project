@@ -1,0 +1,3 @@
+name,contactName,email,phone,notes,isActive,createdAt,updatedAt
+Golden Harvest Foods,Kojo Mensah,kojo@goldenharvest.example,+1 226 555 1401,Primary dry-goods supplier,TRUE,2025-08-01T09:00:00Z,2025-08-01T09:00:00Z
+Coastal Spice Exporters,Ama Boateng,ama@coastalspice.example,+1 226 555 1402,Seasoning and oils vendor,TRUE,2025-08-02T09:00:00Z,2025-08-02T09:00:00Z

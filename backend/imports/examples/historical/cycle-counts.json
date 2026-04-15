@@ -1,0 +1,21 @@
+[
+  {
+    "id": "CC-HIST-5001",
+    "status": "Completed",
+    "note": "Weekly pantry cycle count",
+    "createdBy": "Adwoa Mensimah",
+    "createdAt": "2025-08-11T20:15:00Z",
+    "updatedAt": "2025-08-11T20:30:00Z",
+    "completedAt": "2025-08-11T20:30:00Z",
+    "items": [
+      {
+        "id": 1,
+        "sku": "ASP-SPICE-001",
+        "expectedQty": 62,
+        "countedQty": 60,
+        "varianceQty": -2,
+        "status": "Variance"
+      }
+    ]
+  }
+]

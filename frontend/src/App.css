@@ -1,0 +1,189 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Inter, system-ui, -apple-system;
+  height:100vh;
+  background: radial-gradient(circle at 20% 30%, #38bdf8, transparent),
+              radial-gradient(circle at 80% 70%, #6366f1, transparent),
+              #020617;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* MAIN WRAPPER */
+
+.login-wrapper{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* LOGIN CARD */
+
+.login-card{
+
+  width:420px;
+
+  padding:50px 45px;
+
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(18px);
+
+  border-radius:20px;
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,0.5),
+  inset 0 1px 0 rgba(255,255,255,0.2);
+
+  text-align:center;
+
+  animation:floatIn .7s ease;
+}
+
+/* LOGO */
+
+.logo{
+  font-size:38px;
+  font-weight:800;
+  color:white;
+  letter-spacing:1px;
+}
+
+/* SUBTITLE */
+
+.subtitle{
+  color:#cbd5f5;
+  font-size:14px;
+  margin-top:8px;
+  margin-bottom:35px;
+}
+
+/* INPUT */
+
+.pin-input{
+
+  width:100%;
+
+  padding:16px;
+
+  border-radius:12px;
+
+  border:none;
+
+  background:rgba(255,255,255,0.12);
+
+  color:white;
+
+  font-size:18px;
+
+  text-align:center;
+
+  letter-spacing:3px;
+
+  margin-bottom:18px;
+
+  transition:all .25s;
+}
+
+.pin-input::placeholder{
+  color:#cbd5f5;
+}
+
+.pin-input:focus{
+  outline:none;
+  background:rgba(255,255,255,0.18);
+  transform:scale(1.02);
+}
+
+/* LOGIN BUTTON */
+
+.login-btn{
+
+  width:100%;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:linear-gradient(135deg,#38bdf8,#6366f1);
+
+  color:white;
+
+  font-weight:600;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+  transition:all .3s;
+}
+
+.login-btn:hover{
+
+  transform:translateY(-2px);
+
+  box-shadow:0 15px 30px rgba(99,102,241,.5);
+
+}
+
+/* ERROR */
+
+.error{
+  color:#f87171;
+  margin-bottom:10px;
+  font-size:13px;
+}
+
+/* FOOTER */
+
+.copyright{
+
+  margin-top:28px;
+
+  font-size:12px;
+
+  color:#94a3b8;
+
+}
+
+/* ANIMATION */
+
+@keyframes floatIn{
+
+  from{
+    opacity:0;
+    transform:translateY(30px) scale(.95);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0) scale(1);
+  }
+
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+.login-card{
+  width:90%;
+  padding:40px;
+}
+
+.logo{
+  font-size:32px;
+}
+
+}

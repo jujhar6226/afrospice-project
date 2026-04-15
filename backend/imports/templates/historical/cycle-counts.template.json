@@ -1,0 +1,21 @@
+[
+  {
+    "id": "CC-HISTORY-0001",
+    "status": "Completed",
+    "note": "Historical stock count",
+    "createdBy": "REPLACE_USER_NAME",
+    "createdAt": "2025-01-12T20:00:00Z",
+    "updatedAt": "2025-01-12T20:20:00Z",
+    "completedAt": "2025-01-12T20:20:00Z",
+    "items": [
+      {
+        "id": 1,
+        "sku": "REPLACE-SKU-001",
+        "expectedQty": 40,
+        "countedQty": 39,
+        "varianceQty": -1,
+        "status": "Variance"
+      }
+    ]
+  }
+]

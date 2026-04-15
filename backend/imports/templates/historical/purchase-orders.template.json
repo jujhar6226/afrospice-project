@@ -1,0 +1,23 @@
+[
+  {
+    "id": "PO-HISTORY-0001",
+    "supplier": "REPLACE_SUPPLIER_NAME",
+    "status": "Received",
+    "createdBy": "REPLACE_USER_NAME",
+    "note": "Historical replenishment record",
+    "createdAt": "2025-01-03T09:00:00Z",
+    "updatedAt": "2025-01-06T11:00:00Z",
+    "expectedDate": "2025-01-05T17:00:00Z",
+    "sentAt": "2025-01-03T09:30:00Z",
+    "receivedAt": "2025-01-06T11:00:00Z",
+    "items": [
+      {
+        "id": 1,
+        "sku": "REPLACE-SKU-001",
+        "qtyOrdered": 24,
+        "qtyReceived": 24,
+        "unitCost": 6.2
+      }
+    ]
+  }
+]

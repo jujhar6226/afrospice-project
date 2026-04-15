@@ -1,0 +1,15 @@
+[
+  {
+    "id": 900001,
+    "sku": "REPLACE-SKU-001",
+    "movementType": "adjustment",
+    "quantityDelta": -1,
+    "quantityBefore": 40,
+    "quantityAfter": 39,
+    "referenceType": "cycleCount",
+    "referenceId": "CC-HISTORY-0001",
+    "note": "Historical manual adjustment",
+    "actorName": "REPLACE_USER_NAME",
+    "createdAt": "2025-01-12T20:20:00Z"
+  }
+]

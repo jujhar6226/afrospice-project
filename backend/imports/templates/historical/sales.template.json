@@ -1,0 +1,21 @@
+[
+  {
+    "id": "SALE-HISTORY-0001",
+    "status": "Paid",
+    "channel": "In-Store",
+    "paymentMethod": "Card",
+    "customer": "Walk-in Customer",
+    "staffId": "AFR-900",
+    "date": "2025-01-10T16:15:00Z",
+    "createdAt": "2025-01-10T16:15:00Z",
+    "updatedAt": "2025-01-10T16:15:00Z",
+    "items": [
+      {
+        "sku": "REPLACE-SKU-001",
+        "qty": 2,
+        "price": 12.99,
+        "unitCost": 6.5
+      }
+    ]
+  }
+]

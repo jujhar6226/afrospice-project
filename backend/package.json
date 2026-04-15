@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "AfroSpice backend",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "db:setup-local-replica": "node ./scripts/setup-local-replica-set.js",
+    "db:bootstrap": "node ./scripts/bootstrap-runtime-data.js",
+    "db:import-history": "node ./scripts/import-historical-data.js",
+    "db:cleanup-runtime": "node ./scripts/cleanup-runtime-validation-data.js",
+    "db:migrate-dates": "node ./scripts/migrate-date-fields.js",
+    "db:check": "node -e \"require('dotenv').config({path:'./src/.env'}); const {connectDB,disconnectDB}=require('./src/config/db'); connectDB().then(()=>{console.log('mongo-ok'); return disconnectDB();}).catch((err)=>{console.error(err); process.exit(1);});\"",
+    "verify:runtime": "node ./scripts/verify-runtime.js",
+    "verify:transactions": "node ./scripts/verify-transaction-readiness.js",
+    "verify:readiness": "node ./scripts/verify-deployment-readiness.js",
+    "verify:backup": "node ./scripts/verify-backup-snapshot.js",
+    "verify:restore": "node ./scripts/verify-backup-restore.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.1",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.0.1"
+  }
+}

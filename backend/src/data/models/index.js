@@ -1,0 +1,17 @@
+module.exports = {
+  Counter: require("./Counter"),
+  Role: require("./Role"),
+  Supplier: require("./Supplier"),
+  Customer: require("./Customer"),
+  Product: require("./Product"),
+  User: require("./User"),
+  Sale: require("./Sale"),
+  InventoryMovement: require("./InventoryMovement"),
+  PurchaseOrder: require("./PurchaseOrder"),
+  CycleCount: require("./CycleCount"),
+  AppSetting: require("./AppSetting"),
+  UserAccessEvent: require("./UserAccessEvent"),
+  UserSession: require("./UserSession"),
+  UserSavedView: require("./UserSavedView"),
+  AuditLog: require("./AuditLog"),
+};

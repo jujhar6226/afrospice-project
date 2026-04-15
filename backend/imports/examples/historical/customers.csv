@@ -1,0 +1,4 @@
+name,email,phone,notes,isWalkIn,createdAt,updatedAt
+Walk-in Customer,,,Default retail traffic,TRUE,2025-08-01T09:00:00Z,2025-08-01T09:00:00Z
+Kwame Family Catering,bookings@kwamefamily.example,+1 226 555 1501,Recurring bulk catering customer,FALSE,2025-08-03T10:00:00Z,2025-08-03T10:00:00Z
+Accra Market Kitchen,ops@accramarket.example,+1 226 555 1502,Named restaurant account,FALSE,2025-08-04T10:00:00Z,2025-08-04T10:00:00Z

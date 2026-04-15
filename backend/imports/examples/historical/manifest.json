@@ -1,0 +1,14 @@
+{
+  "options": {
+    "deriveInventoryMovements": true
+  },
+  "datasets": {
+    "suppliers": "./suppliers.csv",
+    "customers": "./customers.csv",
+    "products": "./products.csv",
+    "users": "./users.csv",
+    "sales": "./sales.json",
+    "purchaseOrders": "./purchase-orders.json",
+    "cycleCounts": "./cycle-counts.json"
+  }
+}

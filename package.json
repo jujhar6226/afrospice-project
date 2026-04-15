@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev": "node ./scripts/dev-workspace.js",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "db:setup-local-replica": "npm --prefix backend run db:setup-local-replica",
+    "db:bootstrap": "npm --prefix backend run db:bootstrap",
+    "db:import-history": "node ./backend/scripts/import-historical-data.js",
+    "db:cleanup-runtime": "npm --prefix backend run db:cleanup-runtime",
+    "db:migrate-dates": "npm --prefix backend run db:migrate-dates",
+    "verify:runtime": "npm --prefix backend run verify:runtime",
+    "verify:transactions": "npm --prefix backend run verify:transactions",
+    "verify:readiness": "npm --prefix backend run verify:readiness",
+    "verify:backup": "npm --prefix backend run verify:backup",
+    "verify:restore": "npm --prefix backend run verify:restore",
+    "verify:release": "node ./scripts/verify-release.cjs",
+    "verify:release:local": "node ./scripts/verify-release.cjs --allow-readiness-warnings"
+  },
+  "dependencies": {
+    "mongoose": "^9.3.3"
+  }
+}

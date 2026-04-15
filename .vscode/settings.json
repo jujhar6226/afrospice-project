@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  },
+  "javascript.implicitProjectConfig.checkJs": false,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true
+}

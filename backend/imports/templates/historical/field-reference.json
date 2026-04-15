@@ -1,0 +1,230 @@
+{
+  "manifest": {
+    "format": "json",
+    "required": [
+      "datasets"
+    ],
+    "optional": [
+      "options.deriveInventoryMovements"
+    ],
+    "notes": [
+      "Flat datasets can be CSV or JSON arrays.",
+      "Nested datasets with line items should be JSON arrays.",
+      "Omit a dataset key entirely if you do not have that history yet."
+    ]
+  },
+  "suppliers": {
+    "format": "csv_or_json",
+    "required": [
+      "name"
+    ],
+    "optional": [
+      "id",
+      "contactName",
+      "email",
+      "phone",
+      "notes",
+      "isActive",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "customers": {
+    "format": "csv_or_json",
+    "required": [
+      "name"
+    ],
+    "optional": [
+      "id",
+      "email",
+      "phone",
+      "notes",
+      "isWalkIn",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "products": {
+    "format": "csv_or_json",
+    "required": [
+      "sku",
+      "name"
+    ],
+    "optional": [
+      "id",
+      "barcode",
+      "price",
+      "unitCost",
+      "stock",
+      "category",
+      "supplierId",
+      "supplier",
+      "createdAt",
+      "updatedAt"
+    ],
+    "notes": [
+      "Use either supplierId or supplier name.",
+      "sku is the safest match key for imports."
+    ]
+  },
+  "users": {
+    "format": "csv_or_json",
+    "required": [
+      "staffId",
+      "fullName"
+    ],
+    "optional": [
+      "id",
+      "role",
+      "roleId",
+      "department",
+      "email",
+      "phone",
+      "status",
+      "pin",
+      "pinHash",
+      "pinStatus",
+      "invitedAt",
+      "approvedAt",
+      "approvedBy",
+      "pinUpdatedAt",
+      "shiftAssignment",
+      "staffNotes",
+      "incidentFlag",
+      "incidentNote",
+      "forcePinChange",
+      "isPinned",
+      "timetable",
+      "createdAt",
+      "updatedAt"
+    ],
+    "notes": [
+      "If pin is provided, the importer hashes it before storage.",
+      "If pinHash is provided, it is stored as-is."
+    ]
+  },
+  "sales": {
+    "format": "json_array",
+    "required": [
+      "items"
+    ],
+    "optional": [
+      "id",
+      "status",
+      "channel",
+      "paymentMethod",
+      "customerId",
+      "customer",
+      "cashierUserId",
+      "staffId",
+      "cashier",
+      "tax",
+      "total",
+      "date",
+      "createdAt",
+      "updatedAt"
+    ],
+    "itemRequired": [
+      "sku_or_productId",
+      "qty"
+    ],
+    "itemOptional": [
+      "id",
+      "name",
+      "price",
+      "unitCost",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "purchaseOrders": {
+    "format": "json_array",
+    "required": [
+      "supplier_or_supplierId",
+      "items"
+    ],
+    "optional": [
+      "id",
+      "status",
+      "note",
+      "createdBy",
+      "createdAt",
+      "updatedAt",
+      "expectedDate",
+      "sentAt",
+      "receivedAt",
+      "totalEstimatedCost"
+    ],
+    "itemRequired": [
+      "sku_or_productId",
+      "qtyOrdered"
+    ],
+    "itemOptional": [
+      "id",
+      "productName",
+      "qtyReceived",
+      "unitCost",
+      "status",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "cycleCounts": {
+    "format": "json_array",
+    "required": [
+      "items"
+    ],
+    "optional": [
+      "id",
+      "status",
+      "note",
+      "createdBy",
+      "createdAt",
+      "updatedAt",
+      "completedAt"
+    ],
+    "itemRequired": [
+      "sku_or_productId"
+    ],
+    "itemOptional": [
+      "id",
+      "productName",
+      "expectedQty",
+      "countedQty",
+      "varianceQty",
+      "status",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "inventoryMovements": {
+    "format": "json_array",
+    "required": [
+      "sku_or_productId",
+      "movementType",
+      "quantityDelta",
+      "createdAt"
+    ],
+    "optional": [
+      "id",
+      "productName",
+      "quantityBefore",
+      "quantityAfter",
+      "referenceType",
+      "referenceId",
+      "note",
+      "actorName"
+    ],
+    "notes": [
+      "If this dataset is omitted, the importer can derive movements from paid sales, received purchase orders, and completed cycle counts."
+    ]
+  },
+  "dateRules": {
+    "acceptedFormats": [
+      "2026-03-27T14:30:00Z",
+      "2026-03-27",
+      "2026/03/27"
+    ],
+    "recommended": "Use full ISO timestamps in UTC."
+  }
+}

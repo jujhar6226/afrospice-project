@@ -1,0 +1,2 @@
+sku,name,barcode,price,unitCost,stock,category,supplier,createdAt,updatedAt
+REPLACE-SKU-001,REPLACE_PRODUCT_NAME,1000000000001,12.99,6.5,40,General,REPLACE_SUPPLIER_NAME,2025-01-01T09:00:00Z,2025-01-01T09:00:00Z

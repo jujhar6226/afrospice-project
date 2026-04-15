@@ -1,0 +1,2 @@
+staffId,fullName,role,department,email,phone,status,pin,pinStatus,shiftAssignment,incidentFlag,createdAt,updatedAt
+AFR-900,REPLACE_USER_NAME,Cashier,Front of House,user@example.com,+1 000 000 0002,Active,1234,Assigned,Front Desk,Clear,2025-01-01T08:30:00Z,2025-01-01T08:30:00Z

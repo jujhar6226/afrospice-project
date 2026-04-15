@@ -1,0 +1,50 @@
+[
+  {
+    "id": "PO-HIST-3001",
+    "supplier": "Golden Harvest Foods",
+    "status": "Received",
+    "createdBy": "Adwoa Mensimah",
+    "note": "Monthly pantry restock",
+    "createdAt": "2025-08-03T09:00:00Z",
+    "updatedAt": "2025-08-07T12:30:00Z",
+    "expectedDate": "2025-08-06T17:00:00Z",
+    "sentAt": "2025-08-03T09:15:00Z",
+    "receivedAt": "2025-08-07T12:30:00Z",
+    "items": [
+      {
+        "id": 1,
+        "sku": "ASP-RICE-001",
+        "qtyOrdered": 40,
+        "qtyReceived": 38,
+        "unitCost": 7.4
+      }
+    ]
+  },
+  {
+    "id": "PO-HIST-3002",
+    "supplier": "Coastal Spice Exporters",
+    "status": "Sent",
+    "createdBy": "Adwoa Mensimah",
+    "note": "Oil and seasoning replenishment",
+    "createdAt": "2025-08-09T11:00:00Z",
+    "updatedAt": "2025-08-09T11:30:00Z",
+    "expectedDate": "2025-08-13T17:00:00Z",
+    "sentAt": "2025-08-09T11:30:00Z",
+    "items": [
+      {
+        "id": 1,
+        "sku": "ASP-OIL-001",
+        "qtyOrdered": 20,
+        "qtyReceived": 0,
+        "unitCost": 5.95
+      },
+      {
+        "id": 2,
+        "sku": "ASP-SPICE-001",
+        "qtyOrdered": 24,
+        "qtyReceived": 0,
+        "unitCost": 3.55
+      }
+    ]
+  }
+]

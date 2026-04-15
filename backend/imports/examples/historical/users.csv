@@ -1,0 +1,3 @@
+staffId,fullName,role,department,email,phone,status,pin,pinStatus,shiftAssignment,incidentFlag,createdAt,updatedAt
+AFR-210,Adwoa Mensimah,Manager,Operations,adwoa@afrospice.example,+1 226 555 1601,Active,4210,Assigned,Flexible,Clear,2025-08-01T08:30:00Z,2025-08-01T08:30:00Z
+AFR-211,Samuel Tetteh,Cashier,Front of House,samuel@afrospice.example,+1 226 555 1602,Active,2110,Assigned,Front Desk,Clear,2025-08-01T08:35:00Z,2025-08-01T08:35:00Z

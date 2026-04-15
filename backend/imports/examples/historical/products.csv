@@ -1,0 +1,4 @@
+sku,name,barcode,price,unitCost,stock,category,supplier,createdAt,updatedAt
+ASP-RICE-001,Jollof Rice Mix,1001001001001,14.99,7.55,48,Pantry,Golden Harvest Foods,2025-08-01T09:00:00Z,2025-08-01T09:00:00Z
+ASP-OIL-001,Palm Oil,1001001001002,11.5,6.1,36,Pantry,Coastal Spice Exporters,2025-08-01T09:05:00Z,2025-08-01T09:05:00Z
+ASP-SPICE-001,Suya Spice Blend,1001001001003,9.25,3.8,62,Seasoning,Coastal Spice Exporters,2025-08-01T09:10:00Z,2025-08-01T09:10:00Z
